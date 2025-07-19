@@ -54,6 +54,8 @@ on:
           - main
           - test
         default: main
+          schedule:
+    - cron: '0 */8 * * *'
 
 jobs:
   generate-account-and-key:
