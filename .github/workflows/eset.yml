@@ -54,7 +54,6 @@ on:
           - main
           - test
         default: main
-          on:
   schedule:
   - cron: "0 2 * * 1-5"
 jobs:
