@@ -55,7 +55,7 @@ on:
           - test
         default: main
   schedule:
-  - cron: "0 2 * * 1-5"
+  - cron: "0 2 * * *"
 jobs:
   generate-account-and-key:
     runs-on: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.os || 'windows-latest' }} #if fallback then
